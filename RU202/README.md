@@ -19,7 +19,7 @@
 
 ### Introduction to Distributed Systems
 #### Introduction to Distributed Systems
-* _Re_mote _di_ctionary _s_erver
+* __Re__ mote __di__ ctionary __s__ erver
     * Accessible over the network
     * Client-server paradigm
     * Forms part of a distributed system
