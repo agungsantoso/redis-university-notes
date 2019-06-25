@@ -234,7 +234,7 @@ What are the correct resulting tokens given the default stop words?
 () Potentially a problem. It depends how many documents are in the indices.
 
 #### Schemas & Types
-  | RDBMS | NoSQL (General) | NoSQL (RediSearch)
+  . | RDBMS | NoSQL (General) | NoSQL (RediSearch)
  --- | --- | --- | ---
  Schema Required | Yes | Sometimes | Yes, but partial
  Typed | Strictly | Freeform | Broadly
