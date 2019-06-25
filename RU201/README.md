@@ -40,23 +40,35 @@
 ##### Quiz
 * What language is Redis written in?
 
+
 () C++
+
 (x) C
+
 () Java
+
 () Rust
 
 * What mechanism does Redis use to load modules into the server?
 
+
 () Source-level inclusion
+
 () ODBC
+
 (x) Shared object file
+
 () OpenGL
 
 * How does the Redis server invoke the subroutines in a Redis module?
 
+
 (x) Foreign Function Interface
+
 () Self-contained VM
+
 () Object Linking and Embedding (OLE)
+
 () stunnel
 
 #### How are Modules Different?
@@ -79,14 +91,20 @@ Limited to a single execution thread | N | Y
 ##### Quiz
 * Lua is…
 
+
 () a language for implementing Redis modules
+
 () the first name of the creator of Redis
+
 () the name of the Redis serialization protocol
+
 (x) a language embedded into Redis for database level scripting
 
 * Can additional Redis data types be implemented in Lua?
 
+
 () Yes
+
 (x) No
 
 ### Search Engine Concepts
@@ -97,19 +115,27 @@ Limited to a single execution thread | N | Y
 ##### Quiz
 * The index is made of a collection of?
 
+
 (x) documents
+
 () rows
+
 () columns
+
 () sorted sets
 
 * Can Indexes contain references to docments without storing the document itself?
 
+
 (x) Yes
+
 () No
 
 * Must every field stored in the index be described in a schema?
 
+
 () Yes
+
 (x) No
 
 Any number of fields can be stored in any document, but only the fields that will be queryable need to be in the schema
@@ -128,9 +154,13 @@ Any number of fields can be stored in any document, but only the fields that wil
 
 What are the correct resulting tokens given the default stop words?
 
+
 () john will you return my high resolution gauge
+
 (x) john you return my high resolution gauge
+
 () john you return my high-resolution gauge
+
 () john return high resolution gauge
 
 #### Stemming
@@ -139,16 +169,24 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * Which of the following types of data would not benefit from the use of a stemmer?
 
+
 () A long passage from a book
+
 (x) The author of a book
+
 () The title of a book
+
 () The titles of the chapters in a book
 
 * Which of the following is affected by the language that a document is written in?
 
+
 () Word order
+
 () Schema fields
+
 () The encoding of the text
+
 (x) Selection of the correct stemming function
 
 ### Secondary Index Concepts
@@ -167,9 +205,13 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * Why might you use RediSearch as a secondary index?
 
+
 [x] Another datastore cannot or cannot easily find data using the required parameters
+
 [x] You want change how documents are found independently of how they are stored
+
 [x] You have data stored in multiple locations and with a variety of services and you want to be able to search all at the same time
+
 [] None of the above
 
 ### RediSearch vs Redis
@@ -179,9 +221,13 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * Assuming that you have a pre-populated index called foo with 1000 documents. How many documents would you have after running the following command?
 
+
 () 999
+
 () 0
+
 (x) 1000
+
 () It depends
 
 #### Documents vs Keys 
@@ -192,13 +238,17 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * You have an index called "cartoon-shows" and another index called "vitamin-brands" in the same database. You add a number of shows to the "cartoon-shows" index. Later you add some brands to "vitamin-brands". Both indexes have a document with the ID of "Flinstones" with different data. Is this a problem, and if so why?
 
+
 () Not a problem. Each index is fully independent.
+
 () Not a problem. Each index is not fully dependent but ID is not relevant
+
 (x) Problem. The document for "Flinstones" in "cartoon-shows" overlaps with the document for "Flinstones" in "vitamin-brands". correct
+
 () Potentially a problem. It depends how many documents are in the indices.
 
 #### Schemas & Types
- | RDBMS | NoSQL (General) | NoSQL (RediSearch)
+  | RDBMS | NoSQL (General) | NoSQL (RediSearch)
  --- | --- | --- | ---
  Schema Required | Yes | Sometimes | Yes, but partial
  Typed | Strictly | Freeform | Broadly
@@ -245,9 +295,13 @@ What are the correct resulting tokens given the default stop words?
 
 Consider the most effective and efficient option.
 
+
 () Text
+
 (x) Tag
+
 () Numeric
+
 () Geo
 
 #### Recap
