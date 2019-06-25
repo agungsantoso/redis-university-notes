@@ -40,7 +40,6 @@
 ##### Quiz
 * What language is Redis written in?
 
-
 () C++
 
 (x) C
@@ -51,7 +50,6 @@
 
 * What mechanism does Redis use to load modules into the server?
 
-
 () Source-level inclusion
 
 () ODBC
@@ -61,7 +59,6 @@
 () OpenGL
 
 * How does the Redis server invoke the subroutines in a Redis module?
-
 
 (x) Foreign Function Interface
 
@@ -91,7 +88,6 @@ Limited to a single execution thread | N | Y
 ##### Quiz
 * Lua is…
 
-
 () a language for implementing Redis modules
 
 () the first name of the creator of Redis
@@ -101,7 +97,6 @@ Limited to a single execution thread | N | Y
 (x) a language embedded into Redis for database level scripting
 
 * Can additional Redis data types be implemented in Lua?
-
 
 () Yes
 
@@ -115,7 +110,6 @@ Limited to a single execution thread | N | Y
 ##### Quiz
 * The index is made of a collection of?
 
-
 (x) documents
 
 () rows
@@ -126,13 +120,11 @@ Limited to a single execution thread | N | Y
 
 * Can Indexes contain references to docments without storing the document itself?
 
-
 (x) Yes
 
 () No
 
 * Must every field stored in the index be described in a schema?
-
 
 () Yes
 
@@ -154,7 +146,6 @@ Any number of fields can be stored in any document, but only the fields that wil
 
 What are the correct resulting tokens given the default stop words?
 
-
 () john will you return my high resolution gauge
 
 (x) john you return my high resolution gauge
@@ -169,7 +160,6 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * Which of the following types of data would not benefit from the use of a stemmer?
 
-
 () A long passage from a book
 
 (x) The author of a book
@@ -179,7 +169,6 @@ What are the correct resulting tokens given the default stop words?
 () The titles of the chapters in a book
 
 * Which of the following is affected by the language that a document is written in?
-
 
 () Word order
 
@@ -205,7 +194,6 @@ What are the correct resulting tokens given the default stop words?
 ##### Quiz
 * Why might you use RediSearch as a secondary index?
 
-
 [x] Another datastore cannot or cannot easily find data using the required parameters
 
 [x] You want change how documents are found independently of how they are stored
@@ -220,7 +208,6 @@ What are the correct resulting tokens given the default stop words?
 
 ##### Quiz
 * Assuming that you have a pre-populated index called foo with 1000 documents. How many documents would you have after running the following command?
-
 
 () 999
 
@@ -237,7 +224,6 @@ What are the correct resulting tokens given the default stop words?
 
 ##### Quiz
 * You have an index called "cartoon-shows" and another index called "vitamin-brands" in the same database. You add a number of shows to the "cartoon-shows" index. Later you add some brands to "vitamin-brands". Both indexes have a document with the ID of "Flinstones" with different data. Is this a problem, and if so why?
-
 
 () Not a problem. Each index is fully independent.
 
@@ -294,7 +280,6 @@ What are the correct resulting tokens given the default stop words?
     * Which movies have subtitles in Tagalog or Esperanto?
 
 Consider the most effective and efficient option.
-
 
 () Text
 
