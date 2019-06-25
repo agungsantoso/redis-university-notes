@@ -36,14 +36,19 @@
 * Why is Redis considered a part of a distributed system?
 
 [] It's written in C
+
 [x] It uses the client-server paradigm
+
 [x] It serves data over a network, as its full name, REmote DIctionary Server, implies
+
 [] It implements a set of common data structures
 
 * Which of the following increases the probability of failure in a distributed system?
 
 () An increase in the reliability of the storage systems, such as the disks
+
 () An increase in the redundancy of the system's components
+
 (x) An increase in the number of system components
 
 #### Stream Processing
@@ -66,13 +71,17 @@
 * Why are stream pipelines good for managing continuous flows of data?
 
 () Because they batch up all of the data before performing any processing.
+
 (x) Because they can effectively produce results in near real-time.
 
 * What benefits do stream pipelines provide to distributed systems? (select all that apply):
 
 [x] Increased throughput
+
 [x] Asynchronous processing
+
 [] Fewer system component failures
+
 [x] Decoupling of system components
 
 The use of streams helps to enable parallel processing for greater throughput, allows components to process data at different speeds from each other and provides a way for disparate system components to communicate with each other using standard messages.
@@ -80,8 +89,11 @@ The use of streams helps to enable parallel processing for greater throughput, a
 * What's the name for the input to a streaming pipeline?
 
 () The input batch
+
 (x) The data source
+
 () The data sink
+
 () The database
 
 ### Introduction to Redis Streams
@@ -98,21 +110,29 @@ The use of streams helps to enable parallel processing for greater throughput, a
 * How are streams are implemented in Redis?
 
 () As an optional module
+
 () Using sorted sets
+
 (x) As a new Redis data structure
+
 () Using RPC to Apache Spark
 
 * How can entries can be added to a stream?
 
 (x) By appending to the end of the stream
+
 () By prepending to the front of the stream
+
 () By inserting them at a specific location in the stream
+
 () By swapping with an existing stream entry
 
 * Which of these best describes the role of a consumer group?
 
 () A random-access stream reader
+
 (x) A subscriber to the stream correct
+
 () A partial consumer of the stream
 
 #### Comparison to Standard Redis Data Structure
@@ -147,19 +167,25 @@ The use of streams helps to enable parallel processing for greater throughput, a
 * Which modes of consumption are supported by Redis streams?
 
 () Blocking
+
 () Non-Blocking
+
 (x) Both blocking and non-blocking
 
 * Can the values stored in a stream entry be changed?
 
 () Yes
+
 (x) No
 
 * Which of the following is a key difference between Redis Pub/Sub and Redis Streams?
 
 () Streams allow multiple clients to receive data data. Pub/Sub does not.
+
 () Pub/Sub allows multiple clients to connect and receive data, but streams does not.
+
 (x) Streams store data in memory for later consumption by clients. Pub/Sub doesn't store any messages.
+
 () Pub/Sub stores data in memory for later consumption by clients. Streams doesn't store any messages.
 
 #### Redis Streams Example in Python
@@ -167,6 +193,7 @@ The use of streams helps to enable parallel processing for greater throughput, a
 * What portion of the stream's messages will be read by each of our two consumer groups: "data_warehouse_writer" and "rolling_average_printer"?
 
 () Each can expect to read half of the messages
+
 (x) Each can expect to read all of the messages
 
 ### Hands On
